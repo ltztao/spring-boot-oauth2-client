@@ -1,0 +1,18 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /ui
+    session:
+      cookie:
+        name: UISESSION
+
+security:
+  oauth2:
+    client:
+      clientId: dev
+      clientSecret: 11
+      accessTokenUri: http://localhost:8081/auth/oauth/token
+      userAuthorizationUri: http://localhost:8081/auth/oauth/authorize
+    resource:
+      userInfoUri: http://localhost:8081/auth/user/me
+
