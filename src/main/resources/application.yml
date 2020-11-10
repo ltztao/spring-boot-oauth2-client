@@ -13,6 +13,9 @@ security:
       clientSecret: 11
       accessTokenUri: http://localhost:8081/auth/oauth/token
       userAuthorizationUri: http://localhost:8081/auth/oauth/authorize
+      #认证 成功 跳转的地址
+      #preEstablishedRedirectUri: http://localhost:8080/home
+      #useCurrentUri: false
     resource:
       userInfoUri: http://localhost:8081/auth/user/me
 
